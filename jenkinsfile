@@ -7,6 +7,12 @@ pipeline {
                 echo 'building....'
             }
         }
+ 
+        stage('process') {
+            steps {
+                echo 'processing.'
+            }
+        }
 
         
         stage('Test') {
